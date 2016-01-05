@@ -1,0 +1,41 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BingRewardsBot.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Usernames" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="Passwords" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="fdsf" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AppVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2.0.0</Value>
+    </Setting>
+    <Setting Name="DataVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.0.0</Value>
+    </Setting>
+    <Setting Name="LoginSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=12&amp;ct=1449014129&amp;rver=6.0.5286.0&amp;wp=MBI&amp;wreply=https:%2F%2Fwww.bing.com%2Fsecure%2FPassport.aspx%3Frequrl%3Dhttps%253a%252f%252fwww.bing.com%252frewards%252fdashboard%253fwlexpsignin%253d1%2526wlexpsignin%253d1&amp;lc=1033&amp;id=264960</Value>
+    </Setting>
+    <Setting Name="UsernameBox" Type="System.String" Scope="User">
+      <Value Profile="(Default)">loginfmt</Value>
+    </Setting>
+    <Setting Name="PasswordBox" Type="System.String" Scope="User">
+      <Value Profile="(Default)">passwd</Value>
+    </Setting>
+    <Setting Name="SearchBox" Type="System.String" Scope="User">
+      <Value Profile="(Default)">q</Value>
+    </Setting>
+    <Setting Name="LoginRedirect" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Bing</Value>
+    </Setting>
+    <Setting Name="SleepTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

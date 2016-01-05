@@ -1,0 +1,16 @@
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\BingRewardsBot.exe.config
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\obj\Debug\BingRewardsBot.csprojResolveAssemblyReference.cache
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\obj\Debug\BingRewardsBot.Properties.Resources.resources
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\obj\Debug\BingRewardsBot.csproj.GenerateResource.Cache
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\BingRewardsBot.exe
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\BingRewardsBot.pdb
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\WebDriver.dll
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\WebDriver.Support.dll
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\WebDriver.xml
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\WebDriver.Support.xml
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\obj\Debug\BingRewardsBot.exe
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\obj\Debug\BingRewardsBot.pdb
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\wordlist.txt
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\accounts.txt
+c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\obj\Debug\BingRewardsBot.Form1.resources
+C:\Users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\obj\Debug\BingRewardsBot.Form2.resources
