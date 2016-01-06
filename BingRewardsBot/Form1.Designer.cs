@@ -55,12 +55,15 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.proxyCheckBox = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.proxyUpDown = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.threadUpDown)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.proxyUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -137,6 +140,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.proxyUpDown);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.proxyCheckBox);
             this.groupBox2.Controls.Add(this.numericUpDown3);
             this.groupBox2.Controls.Add(this.label4);
@@ -327,6 +332,28 @@
             this.proxyCheckBox.Text = "Use Proxy";
             this.proxyCheckBox.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 176);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 17);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Change after   ";
+            // 
+            // proxyUpDown
+            // 
+            this.proxyUpDown.Location = new System.Drawing.Point(103, 174);
+            this.proxyUpDown.Name = "proxyUpDown";
+            this.proxyUpDown.Size = new System.Drawing.Size(33, 22);
+            this.proxyUpDown.TabIndex = 13;
+            this.proxyUpDown.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.proxyUpDown.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -351,6 +378,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.threadUpDown)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.proxyUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,6 +410,8 @@
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label ipLabel;
         private System.Windows.Forms.CheckBox proxyCheckBox;
+        private System.Windows.Forms.NumericUpDown proxyUpDown;
+        private System.Windows.Forms.Label label5;
     }
 }
 

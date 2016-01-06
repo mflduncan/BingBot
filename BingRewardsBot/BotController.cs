@@ -14,6 +14,7 @@ namespace BingRewardsBot
         public static double progress = 0;
         BingBot bot;
         static string status = "Starting...";
+      
         public BotController(string username, string password, List<string> queries, int mode)
         {
             this.username = username;
@@ -30,6 +31,8 @@ namespace BingRewardsBot
             login();
             if (!check())
             {
+                progress += 30;
+                bot.quit();
                 return;
             }
             progress += 3;

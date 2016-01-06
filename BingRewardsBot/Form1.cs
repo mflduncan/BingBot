@@ -14,13 +14,15 @@ namespace BingRewardsBot
 {
     public partial class Form1 : Form
     {
-        Thread[] bot_thread = new Thread[3];
-        BotController[] bot_controller = new BotController[3];
+        Thread[] bot_thread;
+        BotController[] bot_controller;
+        TorWrapper tor = new TorWrapper();
         string[] words, accounts;
         int progress;
         bot_arguments[] args;
         int arg_index = 0;
         bool running = true;
+        int botsRan = 0;
 
         struct bot_arguments
         {
@@ -57,6 +59,7 @@ namespace BingRewardsBot
 
         public void populate_list()
         {
+            listView1.Items.Clear();
             Console.WriteLine("Populating list...");
             List<string> usernames = new List<string>();
             List<string> passwords = new List<string>();
@@ -154,6 +157,10 @@ namespace BingRewardsBot
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
+            if (botsRan % Convert.ToInt32(proxyUpDown.Value) == 0)
+            {
+                tor.SendCommand("SIGNAL NEWNYM\r\n"); //request a new ip
+            }
             for (int i = 0; i < bot_thread.Length && running; i++)
             {
                 if (bot_thread[i] == null) //if the thread is new
@@ -162,14 +169,16 @@ namespace BingRewardsBot
                     bot_controller[i] = new BotController(args[arg_index].username, args[arg_index].password, args[arg_index].queries, args[arg_index++].mode);
                     bot_thread[i] = new Thread(bot_controller[i].start);
                     bot_thread[i].Start();
+                    botsRan++;
                 }
                 
-                else if (!bot_thread[i].IsAlive && arg_index != args.Length)
+                else if (!bot_thread[i].IsAlive && arg_index != args.Length) //if the thread is dead
                 {
                     Console.WriteLine("Starting with arg_index = " + Convert.ToString(arg_index));
                     bot_controller[i] = new BotController(args[arg_index].username, args[arg_index].password, args[arg_index].queries, args[arg_index++].mode);
                     bot_thread[i] = new Thread(bot_controller[i].start);
                     bot_thread[i].Start();
+                    botsRan++;
                 }
             }
             progress = Convert.ToInt32(BotController.progress);
@@ -212,6 +221,11 @@ namespace BingRewardsBot
 
             backgroundWorker1.RunWorkerCompleted += backgroundWorker1_RunWorkerCompleted;
             backgroundWorker1.RunWorkerAsync();
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
