@@ -14,3 +14,6 @@ c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewa
 c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\bin\Debug\accounts.txt
 c:\users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\obj\Debug\BingRewardsBot.Form1.resources
 C:\Users\mflduncan\documents\visual studio 2013\Projects\BingRewardsBot\BingRewardsBot\obj\Debug\BingRewardsBot.Form2.resources
+C:\Users\Ethan\Source\Repos\bingbot\BingRewardsBot\bin\Debug\BingRewardsBot.exe.config
+C:\Users\Ethan\Source\Repos\bingbot\BingRewardsBot\obj\Debug\BingRewardsBot.exe
+C:\Users\Ethan\Source\Repos\bingbot\BingRewardsBot\obj\Debug\BingRewardsBot.pdb
